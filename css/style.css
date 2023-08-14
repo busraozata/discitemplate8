@@ -313,6 +313,12 @@ header .header-inner .navigation li {
   }
 }
 
+@media screen and (max-width: 600px) {
+  header .header-inner .navigation li {
+    margin-bottom: 0.2rem;
+  }
+}
+
 header .header-inner .navigation li.dropdown:focus .nav-link::before {
   width: 100%;
 }
@@ -373,6 +379,10 @@ header .header-inner .navigation li .dropdown-menu.show {
     padding-left: 0rem !important;
     background-color: transparent;
   }
+}
+
+header .header-inner .navigation li .dropdown-menu li {
+  margin-left: 0rem !important;
 }
 
 header .header-inner .navigation li .dropdown-menu .dropdown-item {
@@ -441,7 +451,7 @@ header .header-inner .navigation li .nav-link {
 
 @media screen and (max-width: 1200px) {
   header .header-inner .navigation li .nav-link {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
@@ -2754,7 +2764,9 @@ header .header-inner .search-button i {
 }
 
 .services-page .card .card-img-top {
-  height: 35rem;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 1550px) {
